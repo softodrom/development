@@ -1,0 +1,25 @@
+{
+  "name": "assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/softodrom/development.git"
+  },
+  "keywords": [
+    "exam"
+  ],
+  "author": "Cristian Guba",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/softodrom/development/issues"
+  },
+  "homepage": "https://github.com/softodrom/development#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
