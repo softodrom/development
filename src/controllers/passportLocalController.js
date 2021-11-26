@@ -1,6 +1,6 @@
 import passportLocal from "passport-local";
 import passport from "passport";
-import loginService from "../modules/loginModule";
+import loginService from "../models/loginModel";
 
 let LocalStrategy = passportLocal.Strategy;
 
