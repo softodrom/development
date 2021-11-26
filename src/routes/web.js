@@ -21,6 +21,7 @@ let initWebRoutes = (app) => {
         failureFlash: true
     }));
 
+    router.get("/getUsers", homePageController.showUsers);
     router.get("/register", registerController.getPageRegister);
     router.post("/register", auth.validateRegister, registerController.createNewUser);
     router.post("/logout", loginController.postLogOut);
