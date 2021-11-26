@@ -1,4 +1,4 @@
-import registerService from "./../services/registerService";
+import registerService from "./../modules/registerModule";
 import { validationResult } from "express-validator";
 
 let getPageRegister = (req, res) => {
@@ -22,6 +22,7 @@ let createNewUser = async (req, res) => {
 
     //create a new user
     let newUser = {
+        fullname: req.body.fullName,
         email: req.body.email,
         password: req.body.password
     };

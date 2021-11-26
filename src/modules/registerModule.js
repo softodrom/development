@@ -1,4 +1,4 @@
-import DBConnection from "./../configs/DBConnection";
+import DBConnection from "../configs/DBConnection";
 import bcrypt from "bcryptjs";
 
 let createNewUser = (data) => {
@@ -11,6 +11,7 @@ let createNewUser = (data) => {
             // hash password
             let salt = bcrypt.genSaltSync(10);
             let userItem = {
+                fullname: data.fullname,
                 email: data.email,
                 password: bcrypt.hashSync(data.password, salt),
             };
